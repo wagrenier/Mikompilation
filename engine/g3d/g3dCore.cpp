@@ -8,7 +8,7 @@ Vector4 * g3dGetTransformRef(G3DTRANSFORMSTATETYPE transform)
     {
         printError(ENGINE_LOGGER, "g3dGetTransformRef", "g3d is not initalized yet");
     }
-    if (G3DTRANSFORMSTATETYPE::TYPE4 < transform)
+    if (G3DTRANSFORMSTATETYPE::G3DTS_PROJECTION < transform)
     {
         printError(ENGINE_LOGGER, "g3dGetTransformRef", "invlaid transform type");
     }
